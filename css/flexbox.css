@@ -1,0 +1,139 @@
+div, p, input, button, form, span, a, ul, li {
+    /* щоб padding не змінював розміри елемента */
+    box-sizing: border-box;
+}
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.training-box {
+    margin: 77px 0;
+}
+
+.training-box .wrapper {
+    justify-content: flex-start;
+}
+
+.training-flex-container {
+    width: 800px;
+    height: 500px;
+    background-color:#36c1d0;
+    font-size: 19px;
+    color: #000;
+    font-weight: 700;
+    padding: 20px;
+    /* заховати те що вилазить за рамки */
+    overflow: hidden;
+} 
+
+.block {
+    display: block;
+}
+
+.training-flex-element {
+    width: 73px;
+    height: 73px;
+    /* position: relative; */
+    background-color: #fff;
+    margin: 6px;
+    border-radius: 3px;
+    box-shadow: 3.7px 9.2px 18px 0px rgba(0, 0, 0, 0.18);
+}
+
+.training-flex-element p {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.flex-properties-btns-list {
+    padding-left: 50px;
+    position: relative;
+    background-color: #fff;
+}
+
+.value {
+    font-family: 'Bitter', serif;
+    font-size: 19px;
+    padding: 0;
+    margin: 5px 0 5px 0;
+}
+
+.img-text {
+    font-family: 'Bitter', serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid #36c1d0;
+    padding: 7px 13px;
+    margin: 5px 10px 5px 0;
+}
+
+.value-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links {
+    margin-top: 30px ;
+}
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        display: block;
+    }
+
+    .training-flex-container {
+        width: 100%;
+    }
+
+    .flex-properties-btns-list {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        box-shadow: 3.7px 9.2px 18px 0px rgba(0, 0, 0, 0.18);
+    }    
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .training-box {
+        margin: 30px 0 15px;
+    }
+    
+    h1 {
+        margin-bottom: 30px;
+    }
+    
+    .link {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 50px;
+    }
+}
+	
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .flex-properties-btns-list {
+        display: block;
+        margin-right: auto;
+    }  
+
+    .training-flex-element {
+        height: 50px;
+        width: 50px;
+    }
+
+    .training-flex-element p {
+        padding-top: 15px;
+    }
+}

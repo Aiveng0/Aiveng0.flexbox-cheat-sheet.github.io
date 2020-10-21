@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="K394nPHaiXt0iu-vbbIZ-f50-3gN5sPaH8LHUXcVAqs" />
+    <title>Flexbox</title>
+    <link rel="shortcut icon" href="img/flex_logo_Ywc_icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Руководство по FLEXBOX CSS</h1>
+            <p class="hor-start text">Поперечное начало</p>
+            <div class="window-example">
+                <p>Главная (горизонт.) ось →</p>
+                <img src="img/hor.svg" alt="Hor line" class="hor-line">
+                <div class="wrapper">
+                    <div class="flex-element">
+                        <p>Flex елемент</p>
+                    </div>
+                    <div class="flex-element">
+                        <p>Flex елемент</p>
+                    </div>
+                    <div class="flex-element">
+                        <p>Flex елемент</p>
+                    </div>
+                </div>
+                <!-- <p class="vert-text">Поперечная (вертик.) ось →</p> -->
+                <!-- <img src="img/vert.svg" alt="Vert line" class="vert-line"> -->
+            </div>
+            <p class="hor-end text">Поперечный конец <span>Flex-контейнер</span></p>
+        </div>
+    </header>
+    <section class="about-flex-containers">
+        <div class="container">
+            <h2>Свойства flex-контейнера</h2>
+            <div class="properties-list">
+                <!--1-->
+                <div class="properties-list-el">
+                    <div class="flex-properties">
+                        <div class="flex-propertie">
+                            <p class="number">1</p>
+                            <div class="prop">
+                                <p class="value">display: flex;</p>
+                                <p class="web-kit-value">display: -webkit-flex;</p>
+                            </div>
+                        </div>
+                        <div class="about-propertie">
+                            <p><span>Назначение:</span> запуск механизма Flexbox</p>
+                            <p><span>Возможные значения:</span> flex / inline-flex</p>
+                        </div>
+                    </div>
+                    <div class="flex-examples">
+                        <div class="flex-example">
+                            <div class="flex-example-first">
+                                <div class="flex-example-elem">
+                                    <img src="img/flex.png" alt="flex">
+                                    <p class="img-text df-btn">flex;</p>
+                                </div>    
+                            </div>
+                            <div class="flex-example-second">
+                                <div class="flex-example-elem">
+                                    <img src="img/inline-flex.png" alt="inline-flex">
+                                    <p class="img-text dif-btn">inline-flex;</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="properties-list-el">
+                    <div class="flex-properties">
+                        <div class="flex-propertie">
+                            <p class="number">2</p>
+                            <div class="prop">
+                                <p class="value">flex-direction: row;</p>
+                                <p class="web-kit-value">-webkit-flex-direction: row;</p>
+                            </div>
+                        </div>
+                        <div class="about-propertie">
+                            <p><span>Назначение:</span> направление укладки элементов по осям</p>
+                            <p><span>Возможные значения:</span> row / row-reverse / column / column-reverse</p>
+                        </div>
+                    </div>
+                    <div class="flex-examples">
+                        <div class="flex-example">
+                            <div class="flex-example-first">
+                                <div class="flex-example-elem">
+                                    <img src="img/row.png" alt="row">
+                                    <p class="img-text fdr-btn">row;</p>
+                                </div>
+                                <div class="flex-example-elem">
+                                    <img src="img/column.png" alt="column">
+                                    <p class="img-text fdc-btn">column;</p>
+                                </div>
+                            </div>
+                            <div class="flex-example-second">
+                                <div class="flex-example-elem">
+                                    <img src="img/row-reverse.png" alt="row-reverse">
+                                    <p class="img-text fdrr-btn">row-reverse;</p>
+                                </div>   
+                                <div class="flex-example-elem">
+                                    <img src="img/column-reverse.png" alt="column-reverse">
+                                    <p class="img-text fdcr-btn">column-reverse;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="properties-list-el">
+                    <div class="flex-properties">
+                        <div class="flex-propertie">
+                            <p class="number">3</p>
+                            <div class="prop">
+                                <p class="value">flex-wrap: nowrap;</p>
+                                <p class="web-kit-value">-webkit-flex-wrap: nowrap;</p>
+                            </div>
+                        </div>
+                        <div class="about-propertie">
+                            <p><span>Назначение:</span> расположение элементов в одну или несколько строк</p>
+                            <p><span>Возможные значения:</span> nowrap / wrap / wrap-reverse</p>
+                        </div>
+                    </div>
+                    <div class="flex-examples">
+                        <div class="flex-example">
+                            <div class="flex-example-first">
+                                <div class="flex-example-elem">
+                                    <img src="img/nowrap.png" alt="nowrap">
+                                    <p class="img-text fwn-btn">nowrap;</p>
+                                </div>
+                            </div>
+                            <div class="flex-example-second">
+                                <div class="flex-example-elem">
+                                    <img src="img/wrap.png" alt="wrap">
+                                    <p class="img-text fww-btn">wrap;</p>
+                                </div>   
+                                <div class="flex-example-elem">
+                                    <img src="img/wrap-reverse.png" alt="wrap-reverse">
+                                    <p class="img-text fwwr-btn">wrap-reverse;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="properties-list-el">
+                    <div class="flex-properties">
+                        <div class="flex-propertie">
+                            <p class="number">4</p>
+                            <div class="prop">
+                                <p class="value">flex-flow: row nowrap;</p>
+                                <p class="web-kit-value">-webkit-flex-flow: row nowrap;</p>
+                            </div>
+                        </div>
+                        <div class="about-propertie">
+                            <p><span>Назначение:</span> сокращённая запись для свойств flex-direction и flex-wrap</p>
+                            <p><span>Возможные значения:</span> см. свойства 2 и 3</p>
+                        </div>
+                    </div>
+                    <!-- <div class="flex-examples">
+                        <div class="flex-example">
+                            <div class="flex-example-first">
+                                <div class="flex-example-elem">
+                                    <img src="img/nowrap.png" alt="nowrap">
+                                    <p class="img-text">nowrap;</p>
+                                </div>
+                            </div>
+                            <div class="flex-example-second">
+                                <div class="flex-example-elem">
+                                    <img src="img/wrap.png" alt="wrap">
+                                    <p class="img-text">wrap;</p>
+                                </div>   
+                                <div class="flex-example-elem">
+                                    <img src="img/wrap-reverse.png" alt="wrap-reverse">
+                                    <p class="img-text">wrap-reverse;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- 5 -->
+                <div class="properties-list-el">
+                    <div class="flex-properties">
+                        <div class="flex-propertie">
+                            <p class="number">5</p>
+                            <div class="prop">
+                                <p class="value">justify-content: flex-start;</p>
+                                <p class="web-kit-value">-webkit-justify-content: flex-start;</p>
+                            </div>
+                        </div>
+                        <div class="about-propertie">
+                            <p><span>Назначение:</span> выравнивание flex-элементов по главной оси текущей строки</p>
+                            <p><span>Возможные значения:</span> flex-start / flex-end / center / space-between / space-around</p>
+                        </div>
+                    </div>
+                    <div class="flex-examples">
+                        <div class="flex-example">
+                            <div class="flex-example-first">
+                                <div class="flex-example-elem">
+                                    <img src="img/jc-flex-start.png" alt="flex-start">
+                                    <p class="img-text jcfs-btn">flex-start;</p>
+                                </div>
+                                <div class="flex-example-elem">
+                                    <img src="img/jc-center.png" alt="center">
+                                    <p class="img-text jcc-btn">center;</p>
+                                </div>
+                                <div class="flex-example-elem">
+                                    <img src="img/jc-space-around.png" alt="space-around">
+                                    <p class="img-text jcsa-btn">space-around;</p>
+                                </div>
+                            </div>
+                            <div class="flex-example-second">
+                                <div class="flex-example-elem">
+                                    <img src="img/jc-flex-end.png" alt="flex-end">
+                                    <p class="img-text jcfe-btn">flex-end;</p>
+                                </div>   
+                                <div class="flex-example-elem">
+                                    <img src="img/jc-space-between.png" alt="space-between">
+                                    <p class="img-text jcsb-btn">space-between;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="properties-list-el">
+                    <div class="flex-properties">
+                        <div class="flex-propertie">
+                            <p class="number">6</p>
+                            <div class="prop">
+                                <p class="value">align-items: stretch;</p>
+                                <p class="web-kit-value">-webkit-align-items: stretch;</p>
+                            </div>
+                        </div>
+                        <div class="about-propertie">
+                            <p><span>Назначение:</span> выравнивание flex-элементов вдоль поперечной оси</p>
+                            <p><span>Возможные значения:</span> stretch / flex-start / flex-end / center / baseline</p>
+                        </div>
+                    </div>
+                    <div class="flex-examples">
+                        <div class="flex-example">
+                            <div class="flex-example-first">
+                                <div class="flex-example-elem">
+                                    <img src="img/ai-stretch.png" alt="stretch">
+                                    <p class="img-text ais-btn">stretch;</p>
+                                </div>
+                                <div class="flex-example-elem">
+                                    <img src="img/ai-flex-end.png" alt="flex-end">
+                                    <p class="img-text aife-btn">flex-end;</p>
+                                </div>
+                                <div class="flex-example-elem">
+                                    <img src="img/ai-baseline.png" alt="baseline">
+                                    <p class="img-text aib-btn">baseline;</p>
+                                </div>
+                            </div>
+                            <div class="flex-example-second">
+                                <div class="flex-example-elem">
+                                    <img src="img/ai-flex-start.png" alt="flex-start">
+                                    <p class="img-text aifs-btn">flex-start;</p>
+                                </div>   
+                                <div class="flex-example-elem">
+                                    <img src="img/ai-center.png" alt="center">
+                                    <p class="img-text aic-btn">center;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="properties-list-el">
+                    <div class="flex-properties">
+                        <div class="flex-propertie">
+                            <p class="number">7</p>
+                            <div class="prop">
+                                <p class="value">align-content: stretch;</p>
+                                <p class="web-kit-value">-webkit-align-content: stretch;</p>
+                            </div>
+                        </div>
+                        <div class="about-propertie">
+                            <p><span>Назначение:</span> выравнивание строк flex-элементов вдоль поперечной оси</p>
+                            <p><span>Возможные значения:</span> stretch / flex-start / flex-end / center / space-between / space-around</p>
+                        </div>
+                    </div>
+                    <div class="flex-examples">
+                        <div class="flex-example">
+                            <div class="flex-example-first">
+                                <div class="flex-example-elem">
+                                    <img src="img/ac-stretch.png" alt="stretch">
+                                    <p class="img-text acs-btn">stretch;</p>
+                                </div>
+                                <div class="flex-example-elem">
+                                    <img src="img/ac-flex-end.png" alt="flex-end">
+                                    <p class="img-text acfe-btn">flex-end;</p>
+                                </div>
+                                <div class="flex-example-elem">
+                                    <img src="img/ac-space-between.png" alt="space-between">
+                                    <p class="img-text acsb-btn">space-between;</p>
+                                </div>
+                            </div>
+                            <div class="flex-example-second">
+                                <div class="flex-example-elem">
+                                    <img src="img/ac-flex-start.png" alt="flex-start">
+                                    <p class="img-text acfs-btn">flex-start;</p>
+                                </div>   
+                                <div class="flex-example-elem">
+                                    <img src="img/ac-center.png" alt="center">
+                                    <p class="img-text acc-btn">center;</p>
+                                </div>
+                                <div class="flex-example-elem">
+                                    <img src="img/ac-space-around.png" alt="space-around">
+                                    <p class="img-text acsa-btn">space-around;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="link">Попробовать онлайн</a>
+        </div>
+    </footer>
+</body>
+</html>
