@@ -1,5 +1,6 @@
 .selected-propertie {
     color: red;
+    border: 2px solid red;
     background-color: rgb(255, 255, 160);
     /*font-size: 18px;*/
 }
