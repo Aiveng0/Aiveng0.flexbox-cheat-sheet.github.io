@@ -19,7 +19,7 @@ div, p, input, button, form, span, a, ul, li {
 .training-flex-container {
     width: 800px;
     height: 500px;
-    background-color:#36c1d0;
+    background-color:#12c0dd;
     font-size: 19px;
     color: #000;
     font-weight: 700;
@@ -65,7 +65,7 @@ div, p, input, button, form, span, a, ul, li {
     font-family: 'Bitter', serif;
     font-size: 15px;
     cursor: pointer;
-    border: 2px solid #36c1d0;
+    border: 2px solid #12c0dd;
     padding: 7px 13px;
     margin: 5px 10px 5px 0;
 }

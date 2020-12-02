@@ -1,10 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Bitter', serif; */
-    color: #36c1d0;
+    color: #12c0dd;
 	font-size: 15px;
 	padding: 0;
-	margin: 0;
+    margin: 0;
+    /* background: url("../img/bg-vaze.png") right bottom no-repeat fixed; */
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -45,7 +46,7 @@ h1 {
 .window-example {
     width: 882px;
     height: 442px;
-    background-color:#36c1d0;
+    background-color:#12c0dd;
     font-size: 11px;
     font-weight: 700;
     color: #fff;
@@ -155,7 +156,7 @@ h2 {
     width: 20px;
     height: 43px;
     font-size: 19px;
-    background-color:#36c1d0;
+    background-color:#12c0dd;
     display: flex;
     align-items: center;
     color: #fff;
@@ -215,7 +216,7 @@ h2 {
 .link {
     padding: 10px 20px;
     text-decoration: none;
-    background-color: #36c1d0;
+    background-color: #12c0dd;
     font-size: 19px;
     color: #FFF;
     border-radius: 3px;
